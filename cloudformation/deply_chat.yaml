@@ -1,0 +1,104 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: API Gateway com integração Lambda e Bedrock para resposta de perguntas em Google Chat
+
+Parameters:
+  BotName:
+    Type: String
+    Default: "MyQuestionBot"
+  GreetingMessage:
+    Type: String
+    Default: "Olá! Como posso ajudar?"
+
+Resources:
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - "sts:AssumeRole"
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/AmazonBedrockchatAccessPolicy
+
+  QuestionBot:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        ZipFile: |
+          import json
+          import bedrock_session
+
+          def lambda_handler(event, context):
+              session = bedrock_session.BedrockSession()
+              text = event["body"]
+              response = session.send(text, !Ref BotName, !Ref GreetingMessage)
+              return {
+                  "statusCode": 200,
+                  "body": json.dumps(response)
+              }
+      Handler: index.lambda_handler
+      Runtime: python3.12
+      Role: !GetAtt LambdaExecutionRole.Arn
+
+  ApiGateway:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: QuestionAPI
+
+  ApiGatewayResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      ParentId: !GetAtt ApiGateway.RootResourceId
+      PathPart: 'question'
+      RestApiId: !Ref ApiGateway
+
+  ApiGatewayMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      HttpMethod: POST
+      ResourceId: !Ref ApiGatewayResource
+      RestApiId: !Ref ApiGateway
+      AuthorizationType: NONE
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: POST
+        Uri: !Join
+          - ''
+          - - 'arn:aws:apigateway:'
+            - !Ref AWS::Region
+            - ':lambda:path/2015-03-31/functions/'
+            - !GetAtt QuestionBot.Arn
+            - '/invocations'
+
+  ApiGatewayDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn:
+      - ApiGatewayMethod
+    Properties:
+      RestApiId: !Ref ApiGateway
+      StageName: prod
+
+  ApiGatewayProdURL:
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      BasePath: 'prod'
+      DomainName: !Ref ApiGateway
+
+Outputs:
+
+  ApiURL:
+    Description: URL da API para integrar com o Google Chat
+    Value: !Join
+      - ''
+      - - 'https://'
+        - !Ref ApiGateway
+        - '.execute-api.'
+        - !Ref AWS::Region
+        - '.amazonaws.com/prod/question'

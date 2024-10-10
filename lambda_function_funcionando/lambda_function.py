@@ -1,0 +1,72 @@
+import json
+import boto3
+
+# Inicializa o cliente do Bedrock
+bedrock_agent_runtime = boto3.client('bedrock-agent-runtime')
+bedrock_client = boto3.client('bedrock-runtime')
+model_id= "anthropic.claude-3-sonnet-20240229-v1:0"
+boto3_session=boto3.session.Session()
+region=boto3_session.region_name
+
+model_arn=f'arn:aws:bedrock:{region}::foundation-model/{model_id}'
+
+retrieve_param = {
+    'type' : 'KNOWLEDGE_BASE',
+    'knowledgeBaseConfiguration' : {
+        'KnowledgeBaseId': 'TR5DGALMKW',
+        'modelArn': model_arn
+    }
+}
+
+def retrieveAndGenerate(prompt):
+    return bedrock_agent_runtime.retrieve_and_generate(
+        input={
+            'text': prompt
+        },
+        retrieveAndGenerateConfiguration=retrieve_param,
+    )
+
+def generateResponse(prompt):
+    request_body= {
+        "anthropic_version": "bedrock-2023-05-31",
+        "max_tokens": 2048,
+        "temperature": 0,
+        "messages": [
+         {
+            "role": "user",
+            "content": [
+             {
+                 "type": "text",
+                 "text": prompt,
+             }
+            ]
+         }    
+        ]
+    } 
+    
+    response=bedrock_client.invoke_model(
+        modelId=model_id,
+        body=json.dumps(request_body)
+    )
+    response=json.loads(response.get('body').read())
+    
+    print(response)
+    
+    return response
+
+
+def lambda_handler(event, context):
+    
+
+    print(event)
+    
+    promptExemplo = "Para aquisição de 20 computadores até 9 mil reais cada unidade, quais fluxos de processo preciso seguir"
+    
+    responsePrompt = generateResponse(promptExemplo)
+
+    
+    print(responsePrompt)
+    
+    return {
+        'response': responsePrompt 
+    }

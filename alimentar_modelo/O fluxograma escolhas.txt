@@ -1,0 +1,65 @@
+O fluxograma fornecido está relacionado à Lei nº 14.133, que trata de licitações e contratos administrativos. A seguir, apresento as informações estruturadas de maneira hierárquica com base no fluxograma:
+
+---
+
+### **Lei 14.133 - Licitações e Contratos Administrativos**
+
+#### **1. Contratação Direta**
+   1.1 **Dispensa**  
+   - Para serviços de engenharia ou manutenção de veículos automotores acima de R$100 mil.
+   - Para serviços e compras acima de R$50 mil.
+   - Quando não há benefício para a administração pública, devido ao custo temporal.
+
+   1.2 **Inexigibilidade**  
+   - Fornecedor exclusivo.
+   - Contratação de artista ou personalidade pública.
+   - Serviços técnicos especializados, de natureza intelectual.
+
+#### **2. Processo Licitatório**
+   2.1 **Etapas**  
+   - **I. Preparatória**: Preparação da licitação.
+   - **II. Divulgação do edital**: Publicação para conhecimento público.
+   - **III. Apresentação de propostas e lances**: Quando aplicável.
+   - **IV. Julgamento**: Avaliação das propostas.
+   - **V. Habilitação**: Verificação de documentação.
+   - **VI. Recurso**: Possibilidade de contestação.
+   - **VII. Homologação**: Validação final da licitação.
+
+#### **3. Critérios de Julgamento**
+   - **I. Menor preço**: A proposta com o preço mais baixo.
+   - **II. Maior desconto**: Foco no desconto oferecido.
+   - **III. Melhor técnica ou conteúdo artístico**: Avaliação pela qualidade técnica.
+   - **IV. Técnica e preço**: Combinação de técnica e preço.
+   - **V. Maior lance (em caso de leilão)**: Maior valor oferecido.
+   - **VI. Maior retorno econômico**: Melhor custo-benefício para a administração.
+
+#### **4. Modalidades de Licitação**
+   - **I. Pregão**: Modalidade para a aquisição de bens e serviços comuns.
+   - **II. Concorrência**: Modalidade aberta para contratação de maior vulto.
+   - **III. Concurso**: Seleção de trabalho técnico, científico ou artístico.
+   - **IV. Leilão**: Venda de bens da administração.
+   - **V. Diálogo Competitivo**: Modalidade em que o diálogo é utilizado para desenvolvimento de soluções inovadoras.
+
+#### **5. Âmbito de Aplicação**
+   - **Administração Direta, Autarquias e Fundações, Fundos Especiais**: Abrange órgãos da administração direta e indireta.
+   - **Entidades Controladas pela Administração Pública**: Empresas estatais e órgãos dos poderes Legislativo e Judiciário.
+   - **Exceção**: Empresas públicas, sociedades de economia mista e suas subsidiárias, regidas pela Lei nº 13.303.
+
+#### **6. Agente Público**
+   - Envolve servidores e empregados públicos com atribuições relacionadas à licitação.
+
+#### **7. Agente de Contratação**
+   - Designado pela autoridade competente para tomar decisões e acompanhar a licitação.
+   - Composição: Comissão de contratação com 3 membros.
+
+#### **8. Vedada a Participação**
+   - **I. Autor de projeto básico ou executivo**: Pessoa física ou jurídica que tenha relação com o projeto.
+   - **II. Empresa ou consórcio**: Caso o autor do projeto seja dirigente, gerente, acionista ou detenha mais de 5% do capital.
+   - **III. Pessoa física ou jurídica sancionada**: Impossibilitada de participar devido a sanções.
+   - **IV. Vínculo com dirigente de órgão**: Empresa que tenha vínculo com dirigente de órgão contratante.
+   - **V. Empresas controladoras ou coligadas**: Regidas pela Lei nº 6.404.
+   - **VI. Pessoa condenada por crimes**: Nos 5 anos anteriores à divulgação do edital, por crimes como exploração infantil, trabalho escravo ou contratação de menores.
+
+---
+
+Essa estrutura hierárquica reflete o conteúdo principal do fluxograma, descrevendo os principais pontos sobre a Lei 14.133 e os processos envolvidos na licitação e contratos administrativos.

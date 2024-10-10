@@ -3,7 +3,7 @@
 # Verifica se o python3-full está instalado
 if ! dpkg -s python3-full >/dev/null 2>&1; then
     echo "Instalando python3-full..."
-    sudo apt-get install -y python3-full
+    sudo apt-get install -y python3-full python-is-python3
 fi
 
 # Verifica se o pipx está instalado

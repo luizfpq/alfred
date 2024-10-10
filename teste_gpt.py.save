@@ -1,0 +1,53 @@
+import json
+import boto3
+import os
+
+# Inicializando o cliente de API Gateway para chamadas REST
+client = boto3.client('apigatewaymanagementapi', region_name='us-east-1')
+
+def lambda_handler(event, context):
+    input_text = event.get('inputText', 'Hello World')
+    knowledge_base = event.get('knowledgeBase', 'Default knowledge base content')
+
+    # URL base da API do Amazon Bedrock - Substitua pela URL correta da sua API REST do Bedrock
+    bedrock_api_url = 'https://your-bedrock-api-endpoint.amazonaws.com'
+
+    # Configurar os headers e o payload para a chamada da API
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'Bearer {os.environ["BEDROCK_API_TOKEN"]}'  # Defina o token de autorização adequado
+    }
+
+    # Corpo da requisição
+    body = {
+        'ModelId': 'your-model-id',
+        'InputText': input_text,
+        'KnowledgeBase': knowledge_base
+    }
+
+    try:
+        # Fazer a chamada para a API REST do Bedrock usando o API Gateway
+        response = client.post_to_connection(
+            ConnectionId='your-connection-id',  # Substitua com o ID da conexão Bedrock
+            Data=json.dumps(body)
+        )
+        
+        # Processar a resposta da API
+        output_text = response.get('OutputText', 'No output from Bedrock model')
+
+        return {
+            'statusCode': 200,
+            'body': json.dumps({
+                'message': 'Success',
+                'response': output_text
+            })
+        }
+
+    except Exception as e:
+        return {
+            'statusCode': 500,
+            'body': json.dumps({
+                'message': 'Error invoking Bedrock model',
+                'error': str(e)
+            })
+        }

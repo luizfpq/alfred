@@ -1,0 +1,75 @@
+https://catalog.us-east-1.prod.workshops.aws/join?access-code=f8e8-0c6ef1-83
+https://catalog.us-east-1.prod.workshops.aws/workshops/1e5b6626-f63c-41d7-adcb-4a3cdfd279ac/en-US
+
+
+https://partyrock.aws/
+
+
+presentation: https://download-serpro.s3.sa-east-1.amazonaws.com/genai.pptx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAVAEDSUPOKYBVK3MX%2F20241007%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241007T143903Z&X-Amz-Expires=172800&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDtccgR9YNRcM%2FBRpButS3m9F%2FNKpVkTVQETD5XoFhndwIhAPFVOS8GNFuJxGpwzYiSBdpnlHL9Y1WqBtOH0MMX1UhqKp8CCDAQAxoMMzQzODczMzMyMTg4IgyNMf4GDpsu1tdi%2FWoq%2FAFq0fVeLM94GnPYU%2Fx55%2BwqUvRECZ9%2FDwbXWv6R%2FgLQlzdLWmDmrNehuskDqvu3qDY5WSmat9xTwhs%2BqhAGgnOl92eqhyDyLAAZ8fEmPjDS6uJcVUOSAIxDvJjMfInKu%2F7wYQvy%2F8jvdL9v0jGQGhXpTD5ocWQ0Gv1TTGCokpQjA3FbdOJhwctaBAsU7VSJ%2BwmxtbJPF8le6Y0edHswgtmfoFc%2Fv7pwTyfaQRcjNh0ITM5AyRaADaIqLR%2BrasHxOgWl7vZT%2FRoAJ7vxPflC8pYJCxWh20%2FXHiutw2e4eb82op53o7spNUJd3iZXuU7HjPR%2BhEPmqTvSnfRZVBkwl%2BKPuAY6nAHQVcpEf97ob2iOXM8iYAVSAqnxkpKQMIoVImgK%2BuMtFt4s01WGDJ402gG1Icefg5KNAd3PjUCA58RO%2F66MJ%2BcdyKaBbqesKgggN7G8A%2FbZkXY0MEp%2BmyeEJTDdGTqeyzY3lvM1GiUJhtkOFdVjwXe0KlBX3tsJsOG4Azu3q0PIaXHP6mxerGy2RV09GDHQ5CVvjNHNV68j%2F2CWKJw%3D&X-Amz-Signature=c010f4bf66bc78e753248898d7581c93b2cdbfd260b1952507d33c7e71bcfb02
+
+
+
+https://pulse.aws/survey/JUCGWDR8
+
+
+
+https://compras.dados.gov.br/docs/home.html
+
+
+
+
+
+
+
+
+
+
+https://discord.gg/zzRBkWZG
+
+
+http://draw.io
+
+https://catalog.us-east-1.prod.workshops.aws/join?access-code=f8e8-0c6ef1-83
+
+
+https://catalog.us-east-1.prod.workshops.aws/workshops/1e5b6626-f63c-41d7-adcb-4a3cdfd279ac/en-US/06-bedrock-guardrails
+
+https://aws.amazon.com/blogs/mobile/integrating-amazon-bedrock-chat-capabilities-in-react-native/
+
+https://aws.amazon.com/pt/blogs/mobile/integrating-amazon-bedrock-chat-capabilities-in-react-native/
+
+https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html
+
+https://github.com/aws-samples/exam-correction-bedrock
+
+https://github.com/aws-samples/amazon-bedrock-samples
+
+https://sandbox.amplifyapp.com/getting-started
+
+https://catalog.us-east-1.prod.workshops.aws/workshops/d829683a-bb19-4275-a6d0-e7d4195bb8fe/en-US/01-introduction
+
+https://pulse.aws/survey/O4Q2ZNUH
+
+
+Grupo: jefinho - (Instituo J&f Empresa)
+
+Grupo: 1 trabalha e 3 fiscaliza - (CCEE e ONS)
+
+Grupo: IMT - (Instituto Mauá de Tecnologia) - Bruno Marques/Luiz Miguel/José Fernando
+
+Grupo Aquisição Room: Vivian (Camino Education), Quirino (IFSP) e Natállia (IFSP)
+
+Grupo: Vinícius (Conexia Educação)
+
+Grupo STIT Igua: Renan Oliveira, Edson Nogueira e Victor Pereira
+
+Gradio Demo: https://genaigradio2024sp.s3.sa-east-1.amazonaws.com/Gradio.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAVAEDSUPODUCUKYGJ%2F20241008%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241008T132805Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEO7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDxHBxr%2BEumacqI%2Bz1n6a%2B8OiOE%2FnS9r6pZ18vvn3CoEwIhAPVRtEhbbBaStbCS15Zc4Gt4EXMHuLrwhEBNZl%2FC%2BX6WKp8CCEcQAxoMMzQzODczMzMyMTg4Igyh5HAX1bynydqui1Aq%2FAHxJf8TfDOXH75hj5u4BBJC%2Bcq9FemdWw5p34WIgQr6yT56bsz2Om11XKayAsH3oBID4ZBcq30ZjthAJkVovlUpPNAgZ1p2TI69b5xNBZnwFov5FotCvPajYE%2FTcbPfhElBTAJV95%2FjoSJSD1y0%2FVdiov3wAhOS0%2FucGfLIKw7BJYDPnt6FCAQQoYDJPB9Dl1VN07qWPA8rBvpzgCgjp80%2FSmevGa7kljgh%2F2VgQE3AVmGzoNVzAWQ%2F7fOZUa9K6D1rJ%2Fam7SbP2MLVGuxWCGyqEwlAeVbFJIMDDm64R3jTJMENHgWhieuRn%2BXvanFWn4kVx9EF3BcHYnqkeRcwqeaUuAY6nAF0lhvJdkgikzdUWgJ%2Fkj%2FD1RIT%2FXEkYjx5nSI1NTaes68RxE4JzvoVhXcpnO46HxQhcS8STFiJ8p4BROPZ9DrmSg%2F003TNfeJUmwM5DspRXxnR8%2BgIxcqTngFJzZ8ZiBL1tlDbGsvs3tpKb3DkCijocoIN9iXRacifQtjhp%2BVZ3Wl4MO13w9mZ45XaR3BtXH0LSOhGApZzSTexeQM%3D&X-Amz-Signature=52623a9dac6aef88ed982243885491caca52800668428e2c7cfb78b20e2fcfac
+
+Grupo: SuperMevo - Eduardo Tamaki (Mevo) e Ivan Ferreira (Super Professor)
+
+Grupo: Edoo - Rafaella Pauferro, Gabriel Arantes, Giovanna Paixão 
+
+SerprIA: Alexandre Oliveira, Daniel Cinalli, Daniel Fraga, Lucélia Mota, Marcelo Pita
+
+Grupo: Space Needle - Murilo Curti
+
