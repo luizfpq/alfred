@@ -1,0 +1,45 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Gradio API with Bedrock integration
+
+Resources:
+
+  GradioApi:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: GradioApi
+
+  GradioApiResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      ParentId: !GetAtt GradioApi.RootResourceId
+      PathPart: gradio
+      RestApiId: !Ref GradioApi
+
+  GradioApiMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      AuthorizationType: NONE
+      HttpMethod: POST
+      Integration:
+        IntegrationHttpMethod: POST
+        Type: AWS_PROXY
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:654654422992:function:chat-alfred/invocations'
+      MethodResponses:
+        - StatusCode: '200'
+      ResourceId: !Ref GradioApiResource
+      RestApiId: !Ref GradioApi
+
+  GradioApiDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn: GradioApiMethod
+    Properties:
+      RestApiId: !Ref GradioApi
+      StageName: prod
+
+  GradioApiLambdaPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: arn:aws:lambda:us-west-2:654654422992:function:chat-alfred
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub 'arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${GradioApi}/*/*'
